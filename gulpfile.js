@@ -41,7 +41,7 @@ gulp.task("htmls",['cleanHtmls'],function(){
 			prefix:"@@",
 			basepath:"@file"
 		}))
-    	.pipe(gulp.dest(res.build+'/htmls'));
+    	.pipe(gulp.dest(res.build+'/'));
 });
 gulp.task("cleanHtmls",function(){
 	return gulp.src([res.build+"/htmls/**/*.html"],{ read: false })
