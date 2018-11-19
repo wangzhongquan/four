@@ -1,0 +1,89 @@
+@import "_util/base";
+
+.item-container {
+  width: @containerWidth;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  .list-container {
+
+    .gl-item {
+      float: left;
+      width: 240px;
+      box-sizing: border-box;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      padding: 16px 8px;
+      &:hover {
+        border-color: #bebebe;
+      }
+      .i-img {
+        overflow: hidden;
+        a {
+          display: block;
+          float: left;
+          line-height: 220px;
+          text-align: center;
+          img {
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+      }
+      .i-price {
+        line-height: 22px;
+        height: 22px;
+        color: #e4393c;
+        margin-bottom: 6px;
+        em {
+          font-style: normal;
+        }
+      }
+      .i-name {
+        font-size: 1rem;
+        height: 44px;
+        line-height: 22px;
+        overflow: hidden;
+        margin-bottom: 8px;
+      }
+      .i-operate {
+        line-height: 18px;
+        margin-bottom: 8px;
+        overflow: hidden;
+        a {
+          position: relative;
+          padding: 2px 4px 2px 24px;
+          border-radius: 2px;
+          border: 1px solid #ddd;
+          i {
+            left: 3px;
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: url('../images/sprit.png') no-repeat;
+          }
+        }
+        .o-left {
+          float: left;
+
+          &:hover{
+            i{
+              background-position: 0 -436px;
+            }
+          }
+          i {
+            background-position: 0 -413px;
+          }
+
+        }
+        .o-right {
+          float: right;
+          padding-left: 28px;
+          i {
+            background-position: 0 -272px;
+          }
+        }
+      }
+    }
+  }
+}
