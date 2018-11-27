@@ -1,8 +1,8 @@
 @aColor: #7a9998;
 @aColor-hover: #282399;
 
-@containerMaxWidth:1500px;
-@containerWidth:1300px;
+@containerMaxWidth:1300px;
+@containerWidth:1000px;
 @containerMinWidth:500px;
 
 body, html{
@@ -23,10 +23,18 @@ ul,li{
 }
 a{
   text-decoration: none;
+  transition: color 0.3s;
   color: @aColor;
   &:hover{
     color: @aColor-hover;
   }
+}
+
+input[type=text]{
+  padding: 4px;
+  border-radius: 2px;
+  display: inline-block;
+  border: 1px solid #a6a6a6;
 }
 
 .site-container{
@@ -39,11 +47,81 @@ a{
   display: flex;
   position: relative;
 }
+input{
+  margin: 0;
+}
+.text-right{
+  text-align: right;
+  padding-right: 6px;
+}
+.text-center{
+  text-align: center;
+}
+.normal-color{
+  color:#666;
+}
+.black-color{
+  color:black;
+}
+.bold-font{
+  font-weight: bold;
+}
 
+.box--has-shadow{
+  box-shadow: 0.1rem 0 0 0 #d2d2d2, -0.1rem 0 0 0 #d2d2d2, 0 0.1rem 0 0 #b6b6b6, 0 0.2rem 0 0 #d2d2d2, 0.2rem 0 0 0 #e6e6e6, -0.2rem 0 0 0 #e6e6e6, 0 0.3rem 0 0 #e6e6e6, 0 -0.1rem 0 0 #e6e6e6
+}
+.box--is-rounded{
+  border-radius: 4px;
+}
+.box--white{
+  background: white;
+}
+.box{
+  padding: 0 16px;
+}
 
+.bottom-space-half{
+  margin-bottom: 8px;
+}
+.bottom-space{
+  margin-bottom: 16px;
+}
+.padding-bottom-half{
+  padding-bottom: 8px;
+}
+.padding-bottom{
+  padding-bottom: 16px;
+}
+.padding-top-half{
+  padding-top: 8px;
+}
+.padding-top{
+  padding-top: 16px;
+}
+.padding-double-half{
+  padding: 8px 0;
+}
+.padding-double{
+  padding: 16px 0;
+}
+.margin-bottom-half{
+  margin-bottom: 8px;
+}
+.margin-bottom{
+  margin-bottom: 16px;
+}
 
-
-
+.have-top-border{
+  border-top:1px solid #e0dfdf;
+}
+.display-table{
+  display: table;
+  width: 100%;
+  >div{
+    display: table-cell;
+    padding: 0 8px;
+  }
+}
 
 
 
