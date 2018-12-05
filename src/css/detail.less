@@ -7,4 +7,175 @@
   padding-top: 16px;
 }
 .detail-content{
+  border:1px solid #ddd;
 }
+
+
+.c-left{
+  height:400px;
+  flex:0 0 40%;
+  border:1px solid #eeefee;
+  overflow:hidden;
+}
+
+.c-right{
+  flex:auto;
+  border:1px solid #f3f2f0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 25%;
+  color: #fff;
+  text-align: center;
+}
+.red-slide {
+  background: #ca4040;
+}
+.blue-slide {
+  background: #4390ee;
+}
+.orange-slide {
+  background: #ff8604;
+}
+.green-slide {
+  background: #49a430;
+}
+.pink-slide {
+  background: #973e76;
+}
+.swiper-slide .title {
+  font-style: italic;
+  font-size: 42px;
+  margin-top: 80px;
+  margin-bottom: 0;
+  line-height: 45px;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 10px;
+  bottom: 10px;
+  display:none;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #222;
+  margin-right: 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+
+.arrow-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -5px;
+}
+.arrow-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+}
+
+.img-content{
+  height:75%;
+}
+.c-p-title strong{
+  height:32px;
+  line-height:16px;
+  overflow:hidden;
+  display:block;
+}
+
+.c-p-title ul,
+.c-p-title li{
+  display:block;
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+
+.order-info li span{
+  width:100px;
+  display:inline-block;
+}
+.order-level li > span{
+  display:inline-block;
+}
+.order-level li > span:nth-child(1){
+  width:150px;
+}
+.order-level li > span:nth-child(2){
+  width:100px;
+}
+
+.product-price-market{
+  color: #5d5d5d;
+  .market-price{
+      width: 180px;
+  }
+  .scope-code{
+    width: 120px;
+  }
+  .market-no{
+    width: 120px;
+  }
+}
+.d-pic{
+  &.p-bg{
+    background: #f3f3f3;
+    section{
+      height: 22px;
+      line-height: 22px;
+      overflow: hidden;
+    }
+  }
+  position: relative;
+  section{
+    .price-label{
+      width: 70px;
+    }
+    .price-font{
+      color: #e4393c;
+      font-size: 20px;
+    }
+  }
+  .commit-price{
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    line-height: initial;
+    p{
+      margin: 0;
+      color:#999;
+      font-size: 13px;
+    }
+  }
+}
+.flex-small{
+  flex: auto;
+  .item{
+    border: 1px solid #808080;
+    min-width: 60px;
+    text-align: center;
+    a{
+      display: inline-block;
+    }
+    &:hover{
+      border-color: #e3393c;
+    }
+  }
+}
+
