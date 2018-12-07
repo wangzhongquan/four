@@ -4,91 +4,153 @@
     <meta charset="UTF-8">
 
     <title>用户中心</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/user.css">
 </head>
 <body>
 @@include('../template/nav.html',{"className":"styleClassName"})
-<div class="site-container">
-    <div>
-        <!-- Nav tabs -->
-        <ul id="myTabs" class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab"
-                                                      aria-controls="home" aria-expanded="true">
-                基础信息
-            </a></li>
-            <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab"
-                                       aria-controls="profile">Profile</a></li>
-            <li role="presentation" class="dropdown">
-                <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown"
-                   aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
-                    <li><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">@fat</a>
-                    </li>
-                    <li><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <div id="myTabContent" class="tab-content">
-            <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
-                <div>
-                    <div class="row p-t">
-                        <div class="col-lg-6">
-                            <div class="input-group">
-                                      <span class="input-group-addon">
-                                        <input type="checkbox" aria-label="...">
-                                      </span>
-                                <input type="text" class="form-control" aria-label="...">
-                            </div>
-                        </div><!-- /.col-lg-6 -->
-                        <div class="col-lg-6">
-                            <div class="input-group">
-                                  <span class="input-group-addon">
-                                    <input type="radio" aria-label="...">
-                                  </span>
-                                <input type="text" class="form-control" aria-label="...">
-                            </div>
+<div class="detail-content">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                       aria-expanded="true" aria-controls="collapseOne">
+                        安全设置
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div style="display:flex">
+                        <div style="flex:0 0 140px;text-align:center">
+                            <img ng-src="https://oss.aliyuncs.com/aliyun_id_photo_bucket/default_handsome.jpg"
+                                 width="120" height="120"
+                                 src="https://oss.aliyuncs.com/aliyun_id_photo_bucket/default_handsome.jpg"
+                                 data-spm-anchor-id="5176.2020520207.0.i0.41264c12UHNkHW">
+                            <a href="#"><p>修改头像</p></a>
+                        </div>
+                        <div style="flex:auto">
+                            <p>
+                                登录账号 ： wzqaly (您已通过实名认证) 第三方账号绑定</p>
+                            <p>
+                                账号ID ： 1385940908329888</p>
+                            <p>
+                                注册时间 ： 2018年10月30日 下午10:05:00
+                            </p>
                         </div>
                     </div>
-                    <div class="row p-t">
-                        <div class="col-lg-6">
-                            <div class="input-group">
-                                      <span class="input-group-addon">
-                                        账户名称
-                                      </span>
-                                <input type="text" class="form-control" aria-label="...">
+                    <hr class="normal-hr"/>
+                    <div>
+                        <section class="display-flex">
+                            <div class="l-t-l">账号安全程度</div>
+                            <div class="progress-0">
+                                <span class="progress-bar-danger"></span>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="input-group">
-                                  <span class="input-group-addon">
-                                    账户昵称
-                                  </span>
-                                <input type="text" class="form-control" aria-label="...">
+                            <div class="m-l">安全级别: 低</div>
+                            <div>建议开启安全产品</div>
+                        </section>
+                        <hr class="normal-hr"/>
+                    </div>
+                    <div>
+                        <section class="display-flex m-b-h">
+                            <div class="l-t-l">登录密码</div>
+                            <div class="flex-auto">安全性高的密码可以使帐号更安全。建议您定期更换密码，设置一个包含字母，符号或数字中至少两项且长度超过6位的密码。</div>
+                            <div class="m-l-h l-l-l">已设置 | <a href="">修改</a></div>
+                        </section>
+                        <section class="display-flex m-b-h">
+                            <div class="l-t-l">手机绑定</div>
+                            <div class="flex-auto">您已绑定了手机130****000 [您的手机为安全手机，可以找回密码，但不能用于登录]</div>
+                            <div class="m-l-h l-l-l">已设置 | <a href="">修改</a></div>
+                        </section>
+
+                        <section class="display-flex m-b-h">
+                            <div class="l-t-l">注销账号</div>
+                            <div class="flex-auto">如果您不再使用此账号，可以将其注销。账号成功注销后，其下所有服务、数据及隐私信息将会被删除并将无法恢复。
+                                <a href=""> 帮助文档 >> </a></div>
+                            <div class="m-l-h l-l-l"><a href="">注销账号</a></div>
+                        </section>
+
+                        <section class="display-flex m-b-h">
+                            <div class="l-t-l">操作保护</div>
+                            <div class="flex-auto">在控制台关键操作（如：释放、修改密码等）时，通过设置保护强度和验证方式再次确认您的身份，进一步提高账号安全性，有效保护您安全使用云产品。
                             </div>
-                        </div>
+                            <div class="m-l-h l-l-l">未设置 | <a href="">设置</a></div>
+                        </section>
                     </div>
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
-                <p>
-                    没有任何信息
-                </p>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        基本资料
+                    </a>
+                </h4>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
-                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
-                    fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer,
-                    iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
-                    Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles
-                    pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of
-                    them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <dl>
+                        <dt>基本信息</dt>
+                        <dd class="display-flex p-t-h p-b-h">
+							<div class="l-t-l">
+								 会员身份 ：
+							</div>
+                            <div class="flex-auto">
+								个人
+							</div>
+                        </dd>
+                        <dd class="display-flex p-t-h p-b-h">
+                            <div class="l-t-l">真实姓名 ：</div>
+                            <div>**全</div>
+                        </dd>
+
+                        <dt>业务信息</dt>
+                        <dd>
+
+                            <div class="row">
+                                <div class="col-md-2">
+                                    主要行业应用
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </dd>
+                        <dd>* 真实姓名 ：**全</dd>
+                        <dt>基本信息</dt>
+                        <dd>* 会员身份 ：个人</dd>
+                        <dd>* 真实姓名 ：**全</dd>
+                    </dl>
+                </div>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
-                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
-                    cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party
-                    locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before
-                    they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade
-                    thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park
-                    vegan.</p>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        实名认证
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                </div>
             </div>
         </div>
     </div>
@@ -97,11 +159,7 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script>
-    $('#myTabs a').click(function (e) {
-        console.log("111")
-        e.preventDefault()
-        $(this).tab('show')
-    })
+
 </script>
 </body>
 </html>
