@@ -4,13 +4,160 @@
 @@include('../template/nav.html',{"className":"styleClassName"})
 
 <link rel="stylesheet" href="./css/cart.css">
-
+<style>
+	
+</style>
 <div class="site-container">
-    <div class="cart-list">
+    <div>
+		<div class="cart-thead">
+			<div class="cart-checkbox">
+				<div style="padding-left:10px;">
+				<input type="checkbox"  style="vertical-align:middle; margin:0"/>
+				全选
+				</div>
+			</div>
+			<div class="t-goods">
+				商品
+			</div>
+			
+			<div class="t-price">
+				单价
+			</div>
+			<div class="t-quantity">
+				数量
+			</div>
+			<div class="t-sum">
+				小计
+			</div>
+			<div class="t-action">
+				操作
+			</div>
+		</div>
+		<div class="cart-item-list">
+			<div class="item-item">
+				<div class="cart-checkbox">
+					<div style="padding-left:10px;">
+						<input type="checkbox"  style="vertical-align:middle; margin:0"/>
+					</div>
+				</div>
+				<div class="t-goods">
+					<div class="p-img">
+						<img alt="猫人MiiOW保暖内衣女士塑身美体秋衣女内衣修身塑身打底内衣 黑色（U841051） 均码" clstag="clickcart|keycount|xincart|cart_sku_pic" src="//img10.360buyimg.com/cms/s80x80_jfs/t1/4365/22/1696/275053/5b94cd32E182dacac/2e4aed50a655f969.jpg">
 
-
-
-    </div>
+					</div>
+					<div class="item-msg">
+						<div class="p-name">
+							<a clstag="clickcart|keycount|xincart|cart_sku_name" href="//item.jd.com/32325984675.html" target="_blank">
+							猫人MiiOW保暖内衣女士塑身美体秋衣女内衣修身塑身打底内衣 黑色（U841051） 均码
+							</a>
+						</div>
+					</div>
+					<div class="p-props">
+						<div class="props-txt" title="黑色（U841051）">颜色：黑色（U841051）</div>
+						<div class="props-txt" title="均码"> 尺码 ：均码</div>
+					</div>
+				</div>
+				<div class="t-price">
+					<p class="plus-switch">
+						<strong>¥89.00</strong>
+					</p>
+				</div>
+				<div class="t-quantity">
+					1
+				</div>
+				<div class="t-sum">
+					<strong>¥89.00</strong>
+				</div>
+				<div class="t-action">
+					<a  href="javascript:void(0);">删除</a>
+				</div>
+			</div>
+			
+			<hr />
+			
+			<div class="item-item">
+				<div class="cart-checkbox">
+					<div style="padding-left:10px;">
+						<input type="checkbox"  style="vertical-align:middle; margin:0"/>
+					</div>
+				</div>
+				<div class="t-goods">
+					<div class="p-img">						
+						<img alt="猫人男士内裤男平角裤纯u凸中腰短裤头男式四角内裤3条礼盒装 平角3条装 烟灰+宝蓝+浅蓝 XXL" clstag="clickcart|keycount|xincart|cart_sku_pic" src="//img10.360buyimg.com/cms/s80x80_jfs/t1/14045/17/1952/285825/5c1869deEb7a7b1d6/7c7ae791c61399f4.jpg">
+					</div>
+					<div class="item-msg">
+						<div class="p-name">
+							<a clstag="clickcart|keycount|xincart|cart_sku_name" href="//item.jd.com/27436844915.html" target="_blank">
+							猫人男士内裤男平角裤纯u凸中腰短裤头男式四角内裤3条礼盒装 平角3条装 烟灰+宝蓝+浅蓝 XXL
+							</a>
+						</div>
+					</div>
+					<div class="p-props">
+						<div class="props-txt" title="烟灰+宝蓝+浅蓝">颜色：烟灰+宝蓝+浅蓝</div>
+						<div class="props-txt" title="XXL" t="${product.mainSku.sizeDesc}"> 尺码 ：XXL</div>
+					</div>
+				</div>
+				<div class="t-price">
+					<p class="plus-switch">
+						<strong>¥79.90</strong>
+					</p>
+				</div>
+				<div class="t-quantity">
+					1
+				</div>
+				<div class="t-sum">
+					<strong>¥79.90</strong>
+				</div>
+				<div class="t-action">
+					<a  href="javascript:void(0);">删除</a>
+				</div>
+			</div>
+			
+			<hr />
+			
+		</div>
+   
+		<div class="cart-floatbar">
+			
+			<div class="cart-checkbox">
+				<div style="padding-left:10px;">
+				<input type="checkbox"  style="vertical-align:middle; margin:0"/>
+				全选
+				</div>
+			</div>
+			<div class="operation">
+				<a href="#none"   class="remove-batch">删除选中的商品</a>				
+				<a href="#none" class="follow-batch" clstag="clickcart|keycount|xincart|cart_somesku_guanzhu">移到我的关注</a>
+				<a href="#none" class="cleaner-opt J_clr_all" title="亲，点我可快速清理购物车商品哦！">清理购物车</a>
+			</div>
+			<div class="toolbar-right">
+				<div class="amount-sum">
+				</div>
+				
+				<div class="price-sum">
+					<div>
+									<span class="txt txt-new">总价：</span>
+									<span class="price sumPrice"><em data-bind="309.06">¥309.06</em></span>
+									<b class="ml5 price-tips"></b>
+									<div class="price-tipsbox" style="left: 77.7813px; display: none;">
+										<div class="ui-tips-main">不含运费及送装服务费</div>
+										<span class="price-tipsbox-arrow"></span>
+									</div>
+									<br>
+									<span class="txt">已节省：</span>
+									<span class="price totalRePrice">- ¥68.64</span>
+								</div>
+				</div>
+				
+				
+				<div class="btn-area">
+					<a href="javascript:void(0);" onclick="return false;" class="submit-btn" >
+						去结算<b></b></a>
+				</div>
+				
+			</div>
+		</div>
+   </div>
 </div>
 </body>
 </html>
